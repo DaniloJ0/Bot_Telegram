@@ -20,7 +20,7 @@ def FindPattern(update,context):
     update.message.reply_text(fn.PatronFibonacci(text,vertice))
 
 if __name__== '__main__':
-    updater=Updater(token="1858178635:AAECvUvncL5F5J0GMip2kYtua2mC5cv6OB0",use_context=True)
+    updater=Updater(token="YOUR_TOKEN",use_context=True)
     dp=updater.dispatcher
     dp.add_handler(CommandHandler('start', start))
     dp.add_handler(CommandHandler('menu', start)) 
